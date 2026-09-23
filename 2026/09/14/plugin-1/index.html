@@ -436,14 +436,14 @@ A：加 <code>-v</code>。会把门户页面大小、抓到的本机 IP、认证
 })()</script><script>(() => {
   let initFn = window.walineFn || null
   const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
-  const option = null
+  const option = ["name","email"]
 
   const destroyWaline = ele => ele.destroy()
 
   const initWaline = (Fn, el = document, path = window.location.pathname) => {
     const waline = Fn({
       el: el.querySelector('#waline-wrap'),
-      serverURL: 'https://commentsservice.netlify.app/.netlify/functions/comment# https://comhika.zeabur.app/',
+      serverURL: 'https://commentsservice.netlify.app/.netlify/functions/comment',
       pageview: false,
       dark: 'html[data-theme="dark"]',
       comment: false,

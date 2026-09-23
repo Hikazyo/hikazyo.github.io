@@ -986,14 +986,14 @@ S_{2n-1} &amp;= a_1 + (a_2+a_3) + (a_4+a_5) + \cdots + (a_{2n-2}+a_{2n-1}) \\
 })()</script><script>(() => {
   let initFn = window.walineFn || null
   const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
-  const option = null
+  const option = ["name","email"]
 
   const destroyWaline = ele => ele.destroy()
 
   const initWaline = (Fn, el = document, path = window.location.pathname) => {
     const waline = Fn({
       el: el.querySelector('#waline-wrap'),
-      serverURL: 'https://commentsservice.netlify.app/.netlify/functions/comment# https://comhika.zeabur.app/',
+      serverURL: 'https://commentsservice.netlify.app/.netlify/functions/comment',
       pageview: false,
       dark: 'html[data-theme="dark"]',
       comment: false,
